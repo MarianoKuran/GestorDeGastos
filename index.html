@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Gestor de Gastos</title>
+</head>
+<body>
+    <header>
+        <h1>GESTOR DE GASTOS</h1>
+    </header>
+    <div class="sections_ctn">
+        <section class="form_ctn">
+            <form id="form" class="form">
+
+                <div class="inp-rd_ctn">
+                    <label for="ingreso">Ingreso</label>
+                    <input type="radio" id="ingreso" nome="tipo_trs" value="ingreso">
+
+                    <label for="gasto">Gasto</label>
+                    <input type="radio" id="gasto" name="tipo_trs" value="egreso"> 
+                </div>
+
+                <label for="descripcion">Descripcion</label>
+                <input type="text" id="descripcion" name="descripcion">
+                
+                <label for="monto">Monto</label>
+                <input type="number" id="monto" name="monto">
+
+                <label for="categoria" >Categoria</label>
+                <input type="text" id="categoria" name="categoria">
+
+                <button type="submit">Agregar</button>
+            </form>
+        </section>
+        <section id="tabla_ctn" class="tabla_ctn">
+            <table id="tabla" class="tabla">
+
+                <tr id="tb_encabezado" class="tb_encabezado">
+                    <th>Tipo</th>
+                    <th>Descripcion</th>
+                    <th>Monto</th>
+                    <th>Categoria</th>
+                </tr>
+
+                <tr id="tb_datos" class="tb_datos">
+
+                </tr>
+                
+            </table>
+        </section>
+    </div>
+        
+    <script src="main.js"></script>
+</body>
+</html>
