@@ -5,50 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/d821ae6b42.js" crossorigin="anonymous"></script>
+
     <title>Gestor de Gastos</title>
 </head>
 <body>
     <header>
-        <h1>GESTOR DE GASTOS</h1>
+        <i class="fa-solid fa-piggy-bank"></i>
+        <h1> <span class="spn_titulo">Econo</span>Me</h1>
     </header>
     <div class="sections_ctn">
         <section class="form_ctn">
             <form id="form" class="form">
 
                 <div class="inp-rd_ctn">
+                    <i class="fa-solid fa-money-bill-transfer"></i><span class="spn_inp"><input type="radio" id="ingreso" name="tipo_trs" value="Ingreso"></span> 
                     <label for="ingreso">Ingreso</label>
-                    <input type="radio" id="ingreso" nome="tipo_trs" value="ingreso">
-
-                    <label for="gasto">Gasto</label>
-                    <input type="radio" id="gasto" name="tipo_trs" value="egreso"> 
                 </div>
 
-                <label for="descripcion">Descripcion</label>
-                <input type="text" id="descripcion" name="descripcion">
-                
-                <label for="monto">Monto</label>
-                <input type="number" id="monto" name="monto">
+                <div class="inp-rd__ctn">
+                    <i class="fa-solid fa-money-bill-transfer"></i><span class="spn_inp"><input type="radio" id="gasto" name="tipo_trs" value="Gasto"> </span> 
+                    <label for="gasto">Gasto</label>
+                </div>
 
-                <label for="categoria" >Categoria</label>
-                <input type="text" id="categoria" name="categoria">
+                <div class="inp_ctn">
+                    <label for="descripcion"><i class="fa-solid fa-list"></i> Descripcion </label>
+                    <input type="text" id="descripcion" name="descripcion">
+                </div>
 
-                <button type="submit">Agregar</button>
+                <div class="inp_ctn">
+                    <label for="monto"><i class="fa-solid fa-dollar-sign"></i>Monto</label>
+                    <input type="number" id="monto" name="monto">
+                </div>
+
+                <div class="inp_ctn">
+                    <label for="categoria"><i class="fa-solid fa-clone"></i>Categoria</label>
+                    <input type="text" id="categoria" name="categoria">
+                </div>
+
+                <div class="btn_ctn">
+                    <button type="submit">Agregar</button>
+                </div>
             </form>
         </section>
         <section id="tabla_ctn" class="tabla_ctn">
             <table id="tabla" class="tabla">
 
                 <tr id="tb_encabezado" class="tb_encabezado">
-                    <th>Tipo</th>
-                    <th>Descripcion</th>
-                    <th>Monto</th>
-                    <th>Categoria</th>
+                    <th><i class="fa-solid fa-money-bill-transfer fa-money-bill-transfer_tb"></i></th>
+                    <th><i class="fa-solid fa-list fa-list_tb"></i></th>
+                    <th><i class="fa-solid fa-dollar-sign fa-dollar-sign_tb"></i></th>
+                    <th><i class="fa-solid fa-clone fa-clone_tb"></i></th>
                 </tr>
 
-                <tr id="tb_datos" class="tb_datos">
-
-                </tr>
-                
             </table>
         </section>
     </div>
